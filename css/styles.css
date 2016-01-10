@@ -1,0 +1,71 @@
+body {
+	font-family: sans-serif;
+}
+
+.clear-fix:after {
+  content: "";
+  display: table;
+  clear: both;
+  overflow: hidden;
+}
+
+img {
+	max-width: 100%;
+}
+
+* {
+	margin:0;
+	padding:0;
+}
+
+
+
+
+
+#slider-container {
+	max-width:90%;
+	margin:0 auto;
+	overflow: hidden;
+	height: 500px;  /*Adjust as necessary */
+	background-color: #cecece;
+}
+
+#slider {
+	position: relative;
+	overflow: hidden;
+	float:left;
+	width:100%;
+
+}
+
+.slide img {
+
+}
+
+.slide {
+	position: relative;
+	overflow: hidden;
+/*	height: 500px;*/
+	width:100%;
+}
+
+.slide-copy {
+	position: absolute;
+	bottom:0;
+	left:0;
+	background-color: rgba(0,0,0,0.8)
+	width:100%;
+	color:#fff;
+}
+
+#prev, #next {
+	float:left;
+	cursor:pointer;
+	position: absolute;
+	z-index: 100;
+	top:40%;
+}
+
+#next {
+	right:0;
+}
